@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class pembayaranlistrik extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'id',
+        'no_token',
+        'nominal',
+    ];
 }

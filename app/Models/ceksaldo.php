@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class ceksaldo extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'id',
+        'saldo',
+        'nominal',
+    ];
 }

@@ -13,7 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('pembayaranlsitrik', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('no_token');
+            $table->string('nominal');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('pembayaranlistrik');
     }
 };

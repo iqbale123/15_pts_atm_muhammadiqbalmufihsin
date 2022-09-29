@@ -13,7 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('transfer', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('no_rekening');
+            $table->string('no_tujuan');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('transfer');
     }
 };
