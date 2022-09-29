@@ -9,10 +9,14 @@ class tariktunai extends Model
 {
     use HasFactory;
 
+
+    protected $table = 'tariktunai';
+    protected $primaryKey = 'id_user';
+
+
     protected $fillable = [
-        'id',
-        'n0_rekening',
-        'no_tujuan',
+        'id_penarikan',
+        'no_rekening',
     ];
 
 }

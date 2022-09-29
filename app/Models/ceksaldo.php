@@ -9,8 +9,12 @@ class ceksaldo extends Model
 {
     use HasFactory;
 
+
+    protected $table = 'ceksaldo';
+    protected $primaryKey = 'id_user';
+
+
     protected $fillable = [
-        'id',
         'saldo',
         'nominal',
     ];

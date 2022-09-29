@@ -9,8 +9,11 @@ class transfer extends Model
 {
     use HasFactory;
 
+    protected $table = 'transfer';
+    protected $primaryKey = 'id_user';
+
+
     protected $fillable = [
-        'id',
         'no_rekening',
         'no_tujuan',
     ];

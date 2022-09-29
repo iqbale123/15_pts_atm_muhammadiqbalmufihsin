@@ -9,8 +9,11 @@ class pembayaranlistrik extends Model
 {
     use HasFactory;
 
+    protected $table = 'pembayaranlistrik';
+    protected $primaryKey = 'id_user';
+
+
     protected $fillable = [
-        'id',
         'no_token',
         'nominal',
     ];
